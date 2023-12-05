@@ -19,9 +19,8 @@ function activate(context) {
 		const userQuery = 'Generate JS Doc comment for this function: ' + highlighted;
 
         if (userQuery) {
-			console.log(userQuery);
             try {
-                const apiKey = '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'; // Replace with your ChatGPT API key
+                const apiKey = ''; // Replace with your ChatGPT API key
                 const apiUrl = 'https://api.openai.com/v1/chat/completions'; // Adjust the API URL if needed
 
                 const response = await axios.post(apiUrl, {
