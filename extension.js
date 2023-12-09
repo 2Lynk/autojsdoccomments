@@ -1,6 +1,11 @@
 const axios = require('axios');
 const vscode = require('vscode');
 
+/**
+ * Returns an object containing methods to manage the state of the context.
+ * @param {object} context - The context object.
+ * @returns {object} - An object with methods to read, write, and clear the state.
+ */
 function stateManager(context) {
     return {
         read,
@@ -64,7 +69,7 @@ function activate(context) {
             highlighted = editor.document.getText(selectionRange);
         }
 
-        const userQuery = 'Generate JSDoc comment for this function: ' + highlighted;
+        const userQuery = 'Generate and only show me the generated JSDoc comment for this function: ' + highlighted;
 
         if (userQuery) {
             await vscode.window.withProgress({
