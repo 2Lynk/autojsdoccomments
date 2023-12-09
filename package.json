@@ -3,7 +3,7 @@
   "publisher": "2Lynk",
   "displayName": "AutoJSDocComments",
   "description": "Automatically add JSDoc comments to your code ",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.84.0"
   },
