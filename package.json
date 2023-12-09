@@ -1,21 +1,30 @@
 {
   "name": "autojsdoccomments",
+  "publisher": "2Lynk",
   "displayName": "AutoJSDocComments",
-  "description": "Automatically add JS Doc comments to your code ",
-  "version": "0.0.1",
+  "description": "Automatically add JSDoc comments to your code ",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.84.0"
   },
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2Lynk/autojsdoccomments.git"
+  },
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
         "command": "autojsdoccomments.generateComment",
-        "title": "Generate comment"
+        "title": "AutoJSDocComments > Generate JSDoc comment"
+      },
+      {
+        "command": "autojsdoccomments.deleteApiKey",
+        "title": "AutoJSDocComments > Delete saved API key"
       }
     ]
   },
