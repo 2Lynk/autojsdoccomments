@@ -1,5 +1,5 @@
 # AutoJSDocComments
-
+![GitHub all releases](https://img.shields.io/github/downloads/2Lynk/autojsdoccomments/total?color=brightgreen&logo=GitHub)
 A small extension for VisualStudio Code that utilizes ChatGPT to write JSDoc comments.
 
 ## Description
